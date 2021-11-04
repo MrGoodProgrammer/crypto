@@ -1,0 +1,19 @@
+{
+  "name": "my-crypto-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ts/app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ts/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/jest": "^27.0.2"
+  }
+}
