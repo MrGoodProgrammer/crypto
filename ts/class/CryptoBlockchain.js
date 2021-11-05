@@ -9,9 +9,9 @@ var CryptoBlockchain = /** @class */ (function () {
     function CryptoBlockchain() {
         this._blockchain = [];
         this._genesisCryptoData = {
-            sender: strings_1.default.INIT_SENDER_NAME + this.generateRandomNumber(10000),
-            receiver: strings_1.default.INIT_RECEIVER_NAME + this.generateRandomNumber(10000),
-            amount: this.generateRandomNumber(1000000000000000000000)
+            sender: strings_1.default.INIT_SENDER_NAME + " " + this.generateRandomNumber(10000),
+            receiver: strings_1.default.INIT_RECEIVER_NAME + " " + this.generateRandomNumber(10000),
+            amount: this.generateRandomNumber(10000000000)
         };
         this.createGenesisBlock();
     }

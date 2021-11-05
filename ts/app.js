@@ -3,17 +3,23 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var CryptoBlock_1 = __importDefault(require("./class/CryptoBlock"));
+var CryptoBlockchain_1 = __importDefault(require("./class/CryptoBlockchain"));
 exports.default = (function () {
-    var myCrypto = new CryptoBlock_1.default({
-        index: 0,
-        timestamp: 134481381,
-        data: {
-            sender: 'Angelina Jolie',
-            receiver: 'Brad Pitt',
-            amount: 70
-        },
-        precedingHash: 'asdfsdfasdfasffa7456as6d4f5a4dfa8s1f8asd6f1'
+    var myBlockchain = new CryptoBlockchain_1.default();
+    myBlockchain.addBlock({
+        sender: 'Angelina Jolie',
+        receiver: 'Brad Pitt',
+        amount: 70
     });
-    console.log(myCrypto);
+    myBlockchain.addBlock({
+        sender: 'Michael Jordan',
+        receiver: 'Scottie Pippen',
+        amount: 500000
+    });
+    myBlockchain.addBlock({
+        sender: 'Evgeni Nabokov',
+        receiver: 'Ernst Hemingway',
+        amount: 70
+    });
+    console.log(myBlockchain.blockchain);
 })();

@@ -1,16 +1,23 @@
 import CryptoBlock from './class/CryptoBlock';
+import CryptoBlockchain from './class/CryptoBlockchain';
 
 export default (() => {
-	const myCrypto: CryptoBlock = new CryptoBlock({
-		index: 0,
-		timestamp: 134481381,
-		data: {
-			sender: 'Angelina Jolie', 
-			receiver: 'Brad Pitt', 
-			amount: 70
-		}, 
-		precedingHash: 'asdfsdfasdfasffa7456as6d4f5a4dfa8s1f8asd6f1'
+	const myBlockchain: CryptoBlockchain = new CryptoBlockchain();
+	myBlockchain.addBlock({
+		sender: 'Angelina Jolie',
+		receiver: 'Brad Pitt',
+		amount: 70
+	});
+	myBlockchain.addBlock({
+		sender: 'Michael Jordan',
+		receiver: 'Scottie Pippen',
+		amount: 500000
+	});
+	myBlockchain.addBlock({
+		sender: 'Evgeni Nabokov',
+		receiver: 'Ernst Hemingway',
+		amount: 70
 	});
 
-	console.log(myCrypto);
+	console.log(myBlockchain.blockchain);
 })();
