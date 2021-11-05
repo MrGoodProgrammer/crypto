@@ -12,5 +12,6 @@ var testConstants = {
     NAME_4: "Adolf Hitler",
     TIMESTAMP_1: 1635966731804,
     TIMESTAMP_2: 1635954244271,
+    TIMESTAMP_3: 1635634871225,
 };
 exports.default = testConstants;

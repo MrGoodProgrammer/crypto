@@ -10,6 +10,7 @@ const testConstants = {
 	NAME_4: <string>"Adolf Hitler",
 	TIMESTAMP_1: <number>1635966731804,
 	TIMESTAMP_2: <number>1635954244271,
+	TIMESTAMP_3: <number>1635634871225,
 }
 
 export default testConstants;

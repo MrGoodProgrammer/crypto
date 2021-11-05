@@ -1,8 +1,6 @@
 const strings: {[k: string] : string} = {
-	TEST_NAME_1: 'Orenda Fink',
-	TEST_NAME_2: 'Muhammad Ali',
-	TEST_NAME_3: 'Will Willis',
-	TEST_NAME_4: 'Adolf Hitler',
+	INIT_SENDER_NAME: 'Michael Sender',
+	INIT_RECEIVER_NAME: 'George Receiver'
 };
 
 export default strings;
