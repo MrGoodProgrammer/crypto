@@ -1,4 +1,3 @@
-import CryptoBlock from './class/CryptoBlock';
 import CryptoBlockchain from './class/CryptoBlockchain';
 
 export default (() => {
@@ -15,9 +14,7 @@ export default (() => {
 	});
 	myBlockchain.addBlock({
 		sender: 'Evgeni Nabokov',
-		receiver: 'Ernst Hemingway',
+		receiver: 'Ernest Hemingway',
 		amount: 70
 	});
-
-	console.log(myBlockchain.blockchain);
 })();

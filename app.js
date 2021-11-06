@@ -18,8 +18,7 @@ exports.default = (function () {
     });
     myBlockchain.addBlock({
         sender: 'Evgeni Nabokov',
-        receiver: 'Ernst Hemingway',
+        receiver: 'Ernest Hemingway',
         amount: 70
     });
-    console.log(myBlockchain.blockchain);
 })();
